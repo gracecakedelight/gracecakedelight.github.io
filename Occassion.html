@@ -1,0 +1,185 @@
+
+<html>
+  <head>
+    <style>
+    .arrow{
+  position: absolute;
+right: 20px;
+        bottom:617px;
+        font-size:48px;
+    }
+         .call{
+  position: absolute;
+right: 120px;
+        bottom:617px;
+        font-size:42px;
+        }
+
+        .dropbtn {
+  background-color: white ;
+  color: #04AA6D;
+  padding: 16px 45px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+            
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: white;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 26px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: absolute;
+    top:11px;
+    left:100px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+    font-size:27px;
+}
+
+.dropdown a:hover {background-color: white;}
+
+.show {display: block;}
+        .just{
+            position:absolute;
+            bottom:590px;
+            right:362px;
+            font-size:50px;
+            color:#571B7E;
+        }
+        .cup{
+        position: relative;
+        left: 490px;
+        top: 0px;
+        color: purple;
+        font-size: 50px;
+        font-family: garamond;
+      }
+        img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        float:inherit;
+        
+      }
+        .img1{
+            margin-left:30px;
+            margin-right:5px;
+        }
+        .img2{
+            margin-right:5px;
+        }
+        .img3{
+            margin-right:5px;
+        }
+        .img4{
+            margin-left:30px;
+            margin-right:5px;
+        }
+       .img5{
+            margin-right:5px;
+        }
+            </style>
+</head>
+<body background="pink.jpeg">
+    <h1 class="man">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/log.html" style="text-decoration:none">
+ 	<img src="man.png" height="64px">
+             </a>
+             </h1>
+             <h1 class="arrow">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/check.html" style="text-decoration:none">
+                🛒
+             </a>
+             </h1>
+    <h1 class="call">
+            <a href="tel:8590430758" style="text-decoration:none">
+                ☎️
+             </a>
+    </h1>
+    <h1 class="just"><a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/ggg.html" style="text-decoration:none">CAKE<img src="pc.png" height="70px" class="cake">DELIGHT</a></h1>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">🔍  Search</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/theme.html">Theme Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/Boho.html">Bohemian Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/overload.html">Overload Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/pinata.html">Pinata Heart Gateau</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/up.html">Genevieve Floral Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/drip.html?">Sage Green Cake</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script><hr>
+    <br>
+    <h1 class="cup"><a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/Occassion.html"><u><i>Occasion Cakes</i></u>
+      </a></h1>
+  <table>
+  <tr>
+      <td><a class="img1" href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/birthc.html"><img src="birthday.jpeg" alt="Birthday" width="400" height="400"></a>
+             </td>
+  <td><a class="img2" href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/WedC.html"> <img src="wedding.jpeg" alt="Wedding" width="400" height="400"></a>
+  </td>
+  <td><a class="img3" href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/AnniversaryC.html"><img src="anniversary.jpeg" alt="Anniversary" width="400" height="400"></a>
+  </td>
+  <tr>
+  <td><a class="img4" href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/BabyC.html"><img src="baby.jpeg" alt="Baby" width="400" height="400">
+  </a>
+  </td>
+  <td><a class="img5" href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/gifts.html"><img src="gift.jpeg" width="400" alt="Gifts" height="400"></a>
+  </td>
+  </tr>
+    </table>
+
+</body>
+</html>

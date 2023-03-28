@@ -1,0 +1,239 @@
+
+<html>
+  <head>
+    <style>
+    .arrow{
+  position: absolute;
+right: 20px;
+        bottom:617px;
+        font-size:48px;
+    }
+        .call{
+  position: absolute;
+right: 120px;
+        bottom:617px;
+        font-size:42px;
+    }
+     .grace1 {
+            margin: 1%;
+            position: relative;
+        }
+        .grace3 {
+            margin: 1.5%;
+            position: relative;
+        }
+        .first-txt {
+            position: absolute;
+            top: 30px;
+            left: 170px;
+            color:purple;
+            font-family:garamond;
+            
+        }
+         .second-txt {
+            position: absolute;
+            top: 30px;
+            left: 390px;
+            color:purple;
+            font-family:garamond;
+        }
+         .third-txt {
+            position: absolute;
+            top: 30px;
+            left: 780px;
+            color:purple;
+            font-family:garamond;
+        }
+         .fourth-txt {
+            position: absolute;
+            top: 30px;
+            left: 1000px;
+            color:purple;
+            font-family:garamond;
+        }
+        .fifth-txt {
+            position: absolute;
+            top:445px;
+            left: 370px;
+            color:purple;
+            font-family:garamond;
+        }
+        .sixth-txt{
+            position: absolute;
+            top:445px;
+            left: 615px;
+            color:purple;
+            font-family:garamond;
+        }
+        .seventh-txt {
+            position: absolute;
+            top: 445px;
+            left: 772px;
+            color:purple;
+            font-family:garamond;
+        }
+        marquee {
+          color: purple;
+          font-family:garamond;
+        }
+        .center{
+          display:block;
+          margin-left:auto;
+          margin-right:auto;
+          padding:5px;
+        }
+        .dropbtn {
+  background-color: white ;
+  color: #04AA6D;
+  padding: 16px 45px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+            
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: white;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 26px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: absolute;
+    top:11px;
+    left:100px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+    font-size:27px;
+}
+
+.dropdown a:hover {background-color: white;}
+
+.show {display: block;}
+        .just{
+            position:absolute;
+            bottom:595px;
+            right:352px;
+            font-size:50px;
+            color:#571B7E;
+        }
+        
+            </style>
+</head>
+<body bgcolor="#FFCBCB">
+    <h1 class="man">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/log.html" style="text-decoration:none">
+ 	<img src="man.png" height="64px">
+             </a>
+             </h1>
+             <h1 class="arrow">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/check.html" style="text-decoration:none">
+                🛒
+             </a>
+             </h1>
+    <h1 class="call">
+            <a href="tel:8590430758" style="text-decoration:none">
+                ☎️
+             </a>
+    </h1>
+    <h1 class="just"><a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/ggg.html" style="text-decoration:none">CAKE<img src="pc.png" height="70px" class="cake">DELIGHT</a></h1>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">🔍  Search</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/theme.html">Theme Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/Boho.html">Bohemian Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/overload.html">Overload Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/pinata.html">Pinata Heart Gateau</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/up.html">Genevieve Floral Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/drip.html?">Sage Green Cake</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script><hr>
+   <div class="grace1">
+    <img src="grace1.jpeg">
+      <h1 class="first-txt">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/ggg.html" style="text-decoration:none">
+              <i>Home</i>
+             </a>
+             </h1>
+         <h1 class="second-txt">
+            <i>Customization</i>
+        </h1>
+         <h1 class="third-txt">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/abt.html" style="text-decoration:none">
+            <i>About Us</i></a>
+        </h1>
+        <h1 class="fourth-txt">
+          <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/Contact.html" style="text-decoration:none">
+              <i>Contact Us</i></a>
+        </h1>
+        </div>
+        <div class="grace3">
+        <img src="grace3.jpeg">
+        <h1 class="fifth-txt">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/Occassion.html" style="text-decoration:none">
+              <i>Occasion Cakes</i>
+            </a>
+        </h1>
+          <h1 class="sixth-txt">
+              <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/cupcakes.html" style="text-decoration:none">
+                  <i>Cupcakes</i></a>
+        </h1>
+          <h1 class="seventh-txt">
+           <i>Combo Items</i>
+        </h1>
+        </div>
+        <marquee bgcolor="#FFFDD0" direction="right" height="60" style="font-size:28pt" position="bottom">Home Delivery Available</marquee>
+      <a href="http://maps.google.com/?q=First Cross Bridge Ln, Kannammoola, Thiruvananthapuram, Kerala 695033"> <img src="Map.webp" width="99%" height="40%" class="center" alt="Map">
+      </a>
+</body>
+</html>
