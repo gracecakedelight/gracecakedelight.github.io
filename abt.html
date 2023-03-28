@@ -1,0 +1,201 @@
+   <html>
+    <head>
+        <style>
+             .arrow{
+  position: absolute;
+left: 94%;
+        bottom:86%;
+        font-size:48px;
+    }
+         .call{
+  position: absolute;
+left: 87%;
+        bottom:87%;
+        font-size:42px;
+        }
+
+        .dropbtn {
+  background-color: white ;
+  color: #04AA6D;
+  padding: 16px 45px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+            
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: white;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 26px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: absolute;
+    top:11px;
+    left:100px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+    font-size:27px;
+}
+
+.dropdown a:hover {background-color: white;}
+
+.show {display: block;}
+        .just{
+            position:absolute;
+            bottom:83%;
+            left:33%;
+            font-size:50px;
+            color:#571B7E;
+        }
+        .cup{
+    position: relative;
+    left: 40%;
+    top: 0%;
+    color:purple;
+    font-size:50px;
+    font-family:Garamond;
+    font-style:italic; 
+   }
+     .cup2{
+         font-family:Garamond;
+      font-style:oblique;
+         font-size:28px;
+         color:purple;
+         margin:2%;
+         line-height:29pt;
+            }
+   *{
+    box-sizing: border box;
+   }
+
+   .column {
+     float: right;
+     width: 33.33%;
+     padding: 3px;
+     position:relative;
+     right:30%;
+     
+   }
+   .row::after {
+      content:"";
+      clear: both;
+      display: table;
+     
+   }
+      .brown{
+          position:relative;
+          left:35%;
+      }
+   </style>
+    </head>
+    <body background="pink.jpeg">
+        <h1 class="man">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/log.html" style="text-decoration:none">
+ 	<img src="man.png" height="64px">
+             </a>
+             </h1>
+             <h1 class="arrow">
+            <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/check.html" style="text-decoration:none">
+                🛒
+             </a>
+             </h1>
+    <h1 class="call">
+            <a href="tel:8590430758" style="text-decoration:none">
+                ☎️
+             </a>
+    </h1>
+    <h1 class="just"><a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/ggg.html" style="text-decoration:none">CAKE<img src="pc.png" height="70px" class="cake">DELIGHT</a></h1>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">🔍  Search</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/theme.html">Theme Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/Boho.html">Bohemian Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/overload.html">Overload Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/pinata.html">Pinata Heart Gateau</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/up.html">Genevieve Floral Cake</a>
+    <a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/drip.html?">Sage Green Cake</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script><hr>
+    <br>
+    <h1 class="cup"><a href="file:///home/chronos/u-e67b1474c5b4927f3dc0d81befbf06d5fb23eb19/MyFiles/Downloads/abt.html">About Us</a></h1>
+<p><h2 class="cup2">
+Welcome to  Cake Delight,  Cake Delight has been serving its customers with yummy delightful cakes and bakery products since 2010. We offer Home delivery In Trivandrum. Having completed 9 years of dedicated service. We located in Thiruvananthapuram, the capital of Kerala is one of the most beautiful cities in the country. We specialise in producing moist, delicious cakes on a large scale that have that ‘baked at home taste. Cake Orders can be placed online. Delivery of all orders are Guaranteed. We are top rated Online Cake sale in Trivandrum. Now Cake Delight is just a click away…. We are famous for the variety of cakes we provide, We do not compromise on the quality of our Cakes. We are Largest Online Cake Shop in Trivandrum. I specialise in traditional homemade cakes, cookies and brownies and sell them in the local area. That is what we bring you today – Homemade cakes on a larger scale at a cost effective price. We have put our heart and soul in to creating & produce cakes with a homemade look and taste. You can see us baking and the delicious smell of homemade cakes in Trivandrum city. Our aim is to make a “homemade handmade cake” in large numbers, homemade cake without all the effort home baking entails.</h2>
+ <div class="row">
+     <div class="coloumn">
+      <img class="brown" src="brown.jpeg" style="width:30%">
+     </div>
+</div>
+ <p><h2 class="cup2">
+ Cake Delight supply includes Wedding cakes,Customized cakes, 3D cakes,photo cakes,fresh cream cakes,2D cakes,Baptism cakes,Anniversary cakes,Theme based cakes,Gravity defining cakes,Bust cakes ,sugar flowers and much more Delivery to Trivandrum.We are not just a bakery, we are not just bakers. In fact, we are just like you, a bunch of food lovers fascinated with sweet indulgence, who dreamt of creating an appetizing fairy land of divine delicacies that relishes the utmost desires.</h2>
+ <div class="row">
+      <div class="column">
+       <img src="bake.jpeg" style="width:90%">
+     </div>
+ </div>
+ <p><h2 class="cup2">
+Beginning with finest flour mixed with our passion, sprinkling some sugar and butter, blending it with our deepest emotions to create a perfect batter. Kindling it in the oven with our warmth and finally crafting the intricate creations in the form of some lip-smacking cakes, which are out of this world! The only additives you’ll find in our products are an extra pinch of love, care and devotion!We add our magical touch to our recipe, to bring out the flavor and oomph into everything. With fresh ingredients and some traditional methods, we craft some one-of-a-kind cakes baked-fresh-from-the-oven to excel your taste buds.And then, to fill up each celebratory moment with euphoria and excitement, we put in our heart and soul in delivering the luscious cake at just the right time because we understand! We understand the emotions attached to the occasion and so, we always make an effort to add to your happy moments.</h2>
+ <div class="row">
+  <div class="column">
+       <img src="100%.jpg" style="width:70%">
+     </div>
+    </div>
+ <p><h2 class ="cup2">
+                                     We are here to redefine the all-time classics to create some heavenly and unforgettable experiences. And with all this and more, we wish to fill the empty spaces in every conversation with a smile.
+        </h2>
+        <br><br><br><br>
+
+</body>
+
+</html>
